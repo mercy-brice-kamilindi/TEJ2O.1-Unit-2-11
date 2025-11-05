@@ -30,7 +30,6 @@ input.onButtonPressed(Button.B, function() {
     basic.showString('#2')
     basic.showNumber(numberTwo)
     basic.clearScreen()
-    
 })
 
 // compare number
