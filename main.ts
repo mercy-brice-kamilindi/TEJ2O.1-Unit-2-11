@@ -32,3 +32,22 @@ input.onButtonPressed(Button.B, function() {
     basic.clearScreen()
     
 })
+
+// compare number
+input.onGesture(Gesture.Shake, function() {
+    basic.clearScreen()
+    if (numberOne > numberTwo){
+        basic.showNumber(numberOne)
+        basic.showString(">")
+        basic.clearScreen()
+        basic.showNumber(numberTwo)
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showNumber(numberOne)
+        basic.showString("<")
+        basic.clearScreen()
+        basic.showNumber(numberTwo)
+        basic.showIcon(IconNames.Happy)
+    }
+
+})
